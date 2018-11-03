@@ -149,11 +149,28 @@ section
     overflow: hidden;
 }
 
-input:checked ~ .info
+input:checked ~ .cat .info
 {
     height: auto;
     margin-top: 5px;
     overflow: visible;
+}
+
+input:checked ~ .cat 
+{
+    height: auto;
+}
+
+.info::before
+{
+    content: 'Информация:';
+}
+
+input:checked ~ .cat .catDescription
+{
+    margin: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .checkbox 
